@@ -43,6 +43,9 @@
     (E.g, `git commit -m "feat: add profiles"`)  
     `git push -u origin dev-<name>`  
     (E.g., `git push -u origin dev-ray`)
+1. (Optional) Set the editor of Git commit or rebase and etc.  
+    `git config --global core.editor "vim"` (to set to vim) or  
+    `git config --global core.editor "code --wait"` (to set to VSCode)
 
 <a id="dev-and-PR"></a>
 
@@ -51,6 +54,7 @@
     `git checkout dev-<name>` or  
     `git checkout feat-<feat>`
 1. After making some changes, commit it atomically.  
+    `git add .` or `git add <filename1> [<filename2> ...]`  
     `git commit [-m <message>]`
 1. Push the commit(s) to the remote. (Note that it is normal to have some commits that are not pushed to the remote. They can be rebased later.)  
     `git push`
@@ -98,12 +102,16 @@ Master branch
 Individual branch
 1. Note that the following commands are for the reference.
 1. Login to your own account
-1. `mkdir git` (Do it once)
-1. `git clone https://github.com/coding-ray/suspicious-billing-notification.git`
-1. Log in with your username and token.
-1. `mv suspicious-billing-notification no-1-website`
-1. `cd ../public_html`
-1. `ln -s ../git/no-1-website`
-1. Share the link to the website.
-1. The link to the website of the individual branch is listed as follows
+1. Clone into `~/git/no-1-website` with the commands run in `~`:  
+    `mkdir git` (Do it once)  
+    `cd git`  
+    `git clone https://github.com/coding-ray/suspicious-billing-notification.git`  
+    (Log in with your username and token.)  
+    `mv suspicious-billing-notification no-1-website`
+1. Create an externally accessable link in ~/public_html  
+    `cd ../public_html`  
+    `ln -s ../git/no-1-website`  
+    (Share the link to the website like the following one.  
+    https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website/index.html)
+1. The link to the website of the individual branch is listed as follows:
     * 黃柏叡： https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
