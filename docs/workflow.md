@@ -28,7 +28,9 @@
 ## Setup Development Branch
 1. Follow the [instructions] to create a token to access to the account in the command line.
 1. (Press `windows + R` and enter `cmd` to open the terminal.)
-1. Download the repository by entering the following command in the terminal  
+1. Settings to login once. ([Ref.](https://stackoverflow.com/a/17979600))  
+    `git config --global credential.helper store`
+1. Login to GitHub and download the repository by entering the following command in the terminal  
     `cd <somewhere>` (Do it if neccesary)  
     `git clone https://github.com/coding-ray/suspicious-billing-notification.git`  
     `cd suspicious-billing-notification`
