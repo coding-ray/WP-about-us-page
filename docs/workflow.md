@@ -102,5 +102,6 @@ Individual branch
 1. `mv suspicious-billing-notification no-1-website`
 1. `cd ../public_html`
 1. `ln -s ../git/no-1-website`
-1. Share the link to the website. The format is 
-    `https://luffy.ee.ncku.edu.tw/~<username>/no-1-website/index.html`
+1. Share the link to the website.
+1. The link to the website of the individual branch is listed as follows
+    * 黃柏叡： https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
