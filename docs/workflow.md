@@ -113,5 +113,7 @@ Individual branch
     `ln -s ../git/no-1-website`  
     (Share the link to the website like the following one.  
     https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website/index.html)
+    https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website/index.html
 1. The link to the website of the individual branch is listed as follows:
     * 黃柏叡： https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
+    * 徐子灝 : https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website-dev-SleepingDisirer/index.html
