@@ -116,6 +116,7 @@ Individual branch
 1. The link to the website of the individual branch is listed as follows:
     * 黃柏叡 : https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
     * 徐子灝 : https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website/index.html
+    * 李宇洋 : https://luffy.ee.ncku.edu.tw/~ppalee1217/no-1-website-dev-ppalee1217/index.html
     * Remark: 
         * Please paste the link in this point (The link to...) instead of the previous point (Create an externally...).
         * The folder name should contain **no** "dev". The reason why Ray added a folder named "no-1-website-dev-ray" is to distinguish the dev folder and the master folder under the same account.
