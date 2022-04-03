@@ -4,10 +4,10 @@
 }
 
 :root {
-  --cover-border-width: 10px;
-  --cover-margin-width: 5px;
+  --cover-border-width: 2vw;
+  --cover-margin-width: 0.3vw;
   --cover-height-width-offset: calc( 2 * (var(--cover-border-width) + var(--cover-margin-width)));
-  --percentage-of-right-container: 60%;
+  --percentage-of-right-container: 66.451%;
 }
 
 body {
@@ -37,7 +37,9 @@ body::-webkit-scrollbar {
 #cover-inner-container-left {
   width: calc(100% - var(--percentage-of-right-container));
   background-color: #D1C6C6;
-  justify-content: end;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-end;
 }
 
 #cover-inner-container-right {
@@ -46,6 +48,10 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-position: center;
   width: var(--percentage-of-right-container);
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  opacity:80%;
 }
 
 [id^="cover-text"] {
@@ -53,22 +59,44 @@ body::-webkit-scrollbar {
 }
 
 #cover-text-left {
-  margin-right: var(--cover-border-width);
+  margin-right: 1vw;
+  font-size: 4vw;
+  font-weight: 600;
+  color: #434040;
+}
+#cover-text-left-2 {
+  margin-right: 1vw;
+  font-size: 4vw;
+  font-weight: 300;
   color: #434040;
 }
 
 #cover-text-right {
-  margin-left: var(--cover-border-width);
+
+  margin-left: 0.7vw;
+  color: #b65205;
+  font-size: 4vw;
+  font-weight: 600;
+  /* or #D19259*/
+}
+#cover-text-right-2 {
+
+  margin-left: 0.7vw;
+  font-size: 4vw;
+  font-weight: 300;
   color: #C37539;
+  
   /* or #D19259*/
 }
 
 #about-us-container {
   height: 100vh;
+  background-color:#e9ddd2;
 }
 
 #about-us-text {
-  margin: 10px 0 3px 10px
+  margin-left:4.9vw;
+  font-size:8.5vw;
 }
 
 #profile-outer-container {
@@ -86,6 +114,7 @@ body::-webkit-scrollbar {
 
 .profile-inner-container img {
   width: 100%;
+  border-radius: 10px;
 }
 
 #chen img {
@@ -93,7 +122,7 @@ body::-webkit-scrollbar {
 }
 
 #huang img {
-  margin-top: -5vh;
+  margin-top: -14vh;
 }
 
 #xu img {
@@ -101,7 +130,7 @@ body::-webkit-scrollbar {
 }
 
 #li img {
-  margin-top: -3vh;
+  margin-top: -6vh;
 }
 
 
