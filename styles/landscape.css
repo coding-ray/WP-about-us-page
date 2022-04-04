@@ -6,7 +6,7 @@
 :root {
   --cover-border-width: 2vw;
   --cover-margin-width: 0.3vw;
-  --cover-height-width-offset: calc( 2 * (var(--cover-border-width) + var(--cover-margin-width)));
+  --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
   --percentage-of-right-container: 66.451%;
 }
 
@@ -37,40 +37,45 @@ body::-webkit-scrollbar {
 #cover-inner-container-left {
   width: calc(100% - var(--percentage-of-right-container));
   background-color: #D1C6C6;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #cover-inner-container-right {
-  background-image: url("../img/cover.jpg");
+  background-image: url("../img/cover.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: var(--percentage-of-right-container);
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;
-  opacity:80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 80%;
 }
 
 [id^="cover-text"] {
   font-family: "??";
 }
-.cover-text{
+
+.cover-text {
   font-size: 4vw;
 }
-.cover-text-left{
+
+.cover-text-left {
   margin: 0 1vw;
   color: #434040;
 }
-.cover-text-right{
+
+.cover-text-right {
   margin: 0 0.7vw;
 }
-.cover-text-up{
+
+.cover-text-up {
   font-weight: 600;
 }
-.cover-text-down{
+
+.cover-text-down {
   font-weight: 300;
 }
 
@@ -79,27 +84,28 @@ body::-webkit-scrollbar {
   color: #b65205;
   /* or #D19259*/
 }
+
 #cover-text-right-down {
 
   color: #C37539;
-  
+
   /* or #D19259*/
 }
 
 #about-us-container {
   height: 100vh;
-  background-color:#e9ddd2;
+  background-color: #e9ddd2;
 }
 
 #about-us-text {
   margin: 0 4.9vw;
-  font-size:8.5vw;
+  font-size: 8.5vw;
 }
 
 #profile-outer-container {
   display: flex;
   justify-content: space-between;
-  
+
   margin: 0 5vw;
 }
 
@@ -107,20 +113,22 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   width: 15vw;
-  
+
   margin: 0;
 }
 
 .profile-inner-container img {
   width: 15vw;
-  
+
   border-radius: 10px;
 }
-.profile-inner-container h1{
+
+.profile-inner-container h1 {
   font-size: 2.273vw;
-  margin:0;
+  margin: 0;
 }
-.profile-inner-container p{
+
+.profile-inner-container p {
   font-size: 1.364vw;
 }
 
