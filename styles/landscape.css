@@ -43,15 +43,15 @@ body::-webkit-scrollbar {
 }
 
 #cover-inner-container-right {
-  background-image: url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: var(--percentage-of-right-container);
   flex-direction: column;
+  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149,.55)), url("../img/cover.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
   justify-content: center;
+  display: flex;
   align-items: flex-start;
-  opacity: 80%;
 }
 
 [id^="cover-text"] {
@@ -59,6 +59,7 @@ body::-webkit-scrollbar {
 }
 
 .cover-text {
+  position: relative;
   font-size: 4vw;
 }
 
@@ -72,23 +73,22 @@ body::-webkit-scrollbar {
 }
 
 .cover-text-up {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .cover-text-down {
-  font-weight: 300;
+  font-weight: bold;
 }
 
 #cover-text-right-up {
-
-  color: #b65205;
+  color: #422b16;
+  font-weight: bold;
   /* or #D19259*/
 }
 
 #cover-text-right-down {
-
-  color: #C37539;
-
+  color: #422b16;
+  font-weight: bold;
   /* or #D19259*/
 }
 
@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
   color:beige;
   opacity: 1;
   background-color: #463d3d;
-  height:15.3vh;
+  height: fit-content;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
