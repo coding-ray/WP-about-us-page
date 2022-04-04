@@ -57,33 +57,30 @@ body::-webkit-scrollbar {
 [id^="cover-text"] {
   font-family: "??";
 }
-
-#cover-text-left {
-  margin-right: 1vw;
+.cover-text{
   font-size: 4vw;
-  font-weight: 600;
+}
+.cover-text-left{
+  margin: 0 1vw;
   color: #434040;
 }
-#cover-text-left-2 {
-  margin-right: 1vw;
-  font-size: 4vw;
+.cover-text-right{
+  margin: 0 0.7vw;
+}
+.cover-text-up{
+  font-weight: 600;
+}
+.cover-text-down{
   font-weight: 300;
-  color: #434040;
 }
 
-#cover-text-right {
+#cover-text-right-up {
 
-  margin-left: 0.7vw;
   color: #b65205;
-  font-size: 4vw;
-  font-weight: 600;
   /* or #D19259*/
 }
-#cover-text-right-2 {
+#cover-text-right-down {
 
-  margin-left: 0.7vw;
-  font-size: 4vw;
-  font-weight: 300;
   color: #C37539;
   
   /* or #D19259*/
@@ -95,7 +92,7 @@ body::-webkit-scrollbar {
 }
 
 #about-us-text {
-  margin-left:4.9vw;
+  margin: 0 4.9vw;
   font-size:8.5vw;
 }
 
@@ -119,8 +116,9 @@ body::-webkit-scrollbar {
   
   border-radius: 10px;
 }
-.profile-inner-container span{
+.profile-inner-container h1{
   font-size: 2.273vw;
+  margin:0;
 }
 .profile-inner-container p{
   font-size: 1.364vw;
