@@ -7,7 +7,7 @@
   --cover-border-width: 2vw;
   --cover-margin-width: 0.3vw;
   --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
-  --percentage-of-right-container: 66.451%;
+  --percentage-of-right-container: 66%;
 }
 
 body {
@@ -105,7 +105,6 @@ body::-webkit-scrollbar {
 #profile-outer-container {
   display: flex;
   justify-content: space-between;
-
   margin: 0 5vw;
 }
 
@@ -118,18 +117,18 @@ body::-webkit-scrollbar {
 }
 
 .profile-inner-container img {
-  width: 15vw;
+  width: 100%;
 
   border-radius: 10px;
 }
 
-.profile-inner-container h1 {
-  font-size: 2.273vw;
+.profile-inner-container h3 {
+  font-size: 1.8em;
   margin: 0;
 }
 
 .profile-inner-container p {
-  font-size: 1.364vw;
+  font-size: 1.1em;
 }
 
 #chen img {
@@ -153,3 +152,4 @@ body::-webkit-scrollbar {
 .profile-inner-container > * {
   display: none;
 }
+*/
