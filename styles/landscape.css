@@ -112,23 +112,44 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   width: 15vw;
-
   margin: 0;
+}
+
+.profile-inner-container:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease;
 }
 
 .profile-inner-container img {
   width: 100%;
-
   border-radius: 10px;
 }
 
 .profile-inner-container h3 {
   font-size: 1.8em;
+  color:beige;
+  text-align: center;
+  background-color: #463d3d;
   margin: 0;
 }
 
 .profile-inner-container p {
+  transition: .5s ease;
+  margin: 0px;
+  text-align: center;
   font-size: 1.1em;
+  opacity: 0;
+}
+
+.profile-inner-container:hover p {
+  transition: .5s ease;
+  font-size: 1.1em;
+  color:beige;
+  opacity: 1;
+  background-color: #463d3d;
+  height:15.3vh;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #chen img {
