@@ -26,7 +26,7 @@
 <a id="setup"></a>
 
 ## Setup Development Branch
-1. Follow the [instructions] to create a token to access to the account in the command line.
+1. Follow the [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create a token to access to the account in the command line.
 1. (Press `windows + R` and enter `cmd` to open the terminal.)
 1. Settings to login once. ([Ref.](https://stackoverflow.com/a/17979600))  
     `git config --global credential.helper store`
@@ -108,12 +108,15 @@ Individual branch
     `git clone https://github.com/coding-ray/suspicious-billing-notification.git`  
     (Log in with your username and token.)  
     `mv suspicious-billing-notification no-1-website`
-1. Create an externally accessable link in ~/public_html  
+1. Create an externally accessable link in `~/public_html`  
     `cd ../public_html`  
     `ln -s ../git/no-1-website`  
-    (Share the link to the website like the following one.  
+    (The link to the website should look like the following one.  
     https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website/index.html)
-    https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website/index.html
 1. The link to the website of the individual branch is listed as follows:
-    * 黃柏叡： https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
-    * 徐子灝 : https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website-dev-SleepingDisirer/index.html
+    * 黃柏叡 : https://luffy.ee.ncku.edu.tw/~Ray314/no-1-website-dev-ray/index.html
+    * 徐子灝 : https://luffy.ee.ncku.edu.tw/~KABI-1ST/no-1-website/index.html
+    * 李宇洋 : https://luffy.ee.ncku.edu.tw/~ppalee1217/no-1-website-dev-ppalee1217/index.html
+    * Remark: 
+        * Please paste the link in this point (The link to...) instead of the previous point (Create an externally...).
+        * The folder name should contain **no** "dev". The reason why Ray added a folder named "no-1-website-dev-ray" is to distinguish the dev folder and the master folder under the same account.
