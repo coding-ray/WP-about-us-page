@@ -1,199 +1,196 @@
-@font-face {
-  /* 冬青黑體 W3 */
-  font-family: "DongQing";
-  src: url("../fonts/Hiragino Sans GB W3.ttf");
-}
-
-@font-face {
-  /* 冬青黑體 W6 */
-  font-family: "DongQingBold";
-  src: url("../fonts/Hiragino Sans GB W6.otf");
-}
-
-@font-face {
-  /* 華康娃娃體 */
-  font-family: "WaWa";
-  src: url("../fonts/DF Wa Wa.ttf");
-}
-
-:root {
-  --cover-border-width: 2vw;
-  --cover-margin-width: 0.3vw;
-  --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
-  --percentage-of-right-container: 66%;
-}
-
-body {
-  background-color: white;
-  height: 100%;
-  margin: 0;
-}
-
-body::-webkit-scrollbar {
-  width: 0;
-}
-
-#cover-outer-container {
-  display: flex;
-  height: calc(100vh - var(--cover-height-width-offset));
-  width: calc(100vw - var(--cover-height-width-offset));
-  border: var(--cover-border-width) solid #595050;
-  margin: var(--cover-margin-width);
-}
-
-#cover-outer-container>* {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-
-#cover-inner-container-left {
-  width: calc(100% - var(--percentage-of-right-container));
-  background-color: #D1C6C6;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#cover-inner-container-right {
-  width: var(--percentage-of-right-container);
-  flex-direction: column;
-  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149,.55)), url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.cover-text {
-  position: relative;
-  font-size: 4vw;
-  font-family: "DongQingBold";
-}
-
-.cover-text-left {
-  margin: 0 1vw;
-  color: #434040;
-}
-
-.cover-text-right {
-  margin: 0 0.7vw;
-  color: #4E3821;
-}
-
-.cover-text-up {
-  font-weight: bold;
-}
-
-.cover-text-down {
-  font-weight: bold;
-}
-
-#about-us-container {
-  height: 100vh;
-  background-color: #e9ddd2;
-}
-
-#about-us-text {
-  font-family: "WaWa";
-  margin: 0 4.9vw;
-  font-size: 8.5vw;
-  font-weight: 500;
-}
-
-#profile-outer-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 5vw;
-}
-
-.profile-inner-container {
-  display: flex;
-  flex-direction: column;
-  width: 15vw;
-  margin: 0;
-}
-
-.profile-inner-container:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 0.3s ease;
-}
-
-.profile-inner-container img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.profile-inner-container h3 {
-  font-size: 1.8em;
-  color:beige;
-  text-align: center;
-  background-color: #463d3d;
-  margin: 0;
-}
-
-.profile-inner-container p {
-  transition: .5s ease;
-  margin: 0px;
-  text-align: center;
-  font-size: 1.1em;
-  opacity: 0;
-}
-
-.profile-inner-container:hover p {
-  font-family: "DongQingBold";
-  transition: .5s ease;
-  font-size: 1.1em;
-  color:beige;
-  opacity: 1;
-  background-color: #463d3d;
-  height: fit-content;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-#chen img {
-  margin-top: 1.8vw;
-}
-
-#huang img {
-  margin-top: -2.25vw;
-}
-
-#xu img {
-  margin-top: 2vw;
-}
-
-#li img {
-  margin-top: -1.82vw;
-}
-
-@media screen and (device-aspect-ratio: 4/3) {
-:root { 
-  --percentage-of-right-container: 80%; }
-
-  #cover-outer-container {
-    border: 2vw solid #595050;
-    border-width: 3vw 2vw;
-  }
-
-#cover-inner-container-right {
-  background-size: 100% 71vw;
-}
-
-.profile-inner-container {
-    width: 15vw;
-    padding-top: 12vw;
-    margin: 0;
-  } 
-
-.profile-inner-container:hover {
-  transform: scale(1.25, 1.25);
-  transition: all 0.45s ease;
-}
-/*
+        @font-face {
+        /* 冬青黑體 W3 */
+        font-family: "DongQing";
+        src: url("../fonts/Hiragino Sans GB W3.ttf");
+    }
+    
+    @font-face {
+        /* 冬青黑體 W6 */
+        font-family: "DongQingBold";
+        src: url("../fonts/Hiragino Sans GB W6.otf");
+    }
+    
+    @font-face {
+        /* 華康娃娃體 */
+        font-family: "WaWa";
+        src: url("../fonts/DF Wa Wa.ttf");
+    }
+    
+     :root {
+        --cover-border-width: 2vw;
+        --cover-margin-width: 0.3vw;
+        --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
+        --percentage-of-right-container: 66%;
+    }
+    
+    body {
+        background-color: white;
+        height: 100%;
+        margin: 0;
+    }
+    
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    #cover-outer-container {
+        display: flex;
+        height: calc(100vh - var(--cover-height-width-offset));
+        width: calc(100vw - var(--cover-height-width-offset));
+        border: var(--cover-border-width) solid #595050;
+        margin: var(--cover-margin-width);
+    }
+    
+    #cover-outer-container>* {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    
+    #cover-inner-container-left {
+        width: calc(100% - var(--percentage-of-right-container));
+        background-color: #D1C6C6;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    #cover-inner-container-right {
+        width: var(--percentage-of-right-container);
+        flex-direction: column;
+        background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149, .55)), url("../img/cover.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .cover-text {
+        position: relative;
+        font-size: 4vw;
+        font-family: "DongQingBold";
+    }
+    
+    .cover-text-left {
+        margin: 0 1vw;
+        color: #434040;
+    }
+    
+    .cover-text-right {
+        margin: 0 0.7vw;
+        color: #4E3821;
+    }
+    
+    .cover-text-up {
+        font-weight: bold;
+    }
+    
+    .cover-text-down {
+        font-weight: bold;
+    }
+    
+    #about-us-container {
+        height: 100vh;
+        background-color: #e9ddd2;
+    }
+    
+    #about-us-text {
+        font-family: "WaWa";
+        margin: 0 4.9vw;
+        font-size: 8.5vw;
+        font-weight: 500;
+    }
+    
+    #profile-outer-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5vw;
+    }
+    
+    .profile-inner-container {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        margin: 0;
+    }
+    
+    .profile-inner-container:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 0.3s ease;
+    }
+    
+    .profile-inner-container img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .profile-inner-container h3 {
+        font-size: 1.8em;
+        color: beige;
+        text-align: center;
+        background-color: #463d3d;
+        margin: 0;
+    }
+    
+    .profile-inner-container p {
+        transition: .5s ease;
+        margin: 0px;
+        text-align: center;
+        font-size: 1.1em;
+        opacity: 0;
+    }
+    
+    .profile-inner-container:hover p {
+        font-family: "DongQingBold";
+        transition: .5s ease;
+        font-size: 1.1em;
+        color: beige;
+        opacity: 1;
+        background-color: #463d3d;
+        height: fit-content;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    #chen img {
+        margin-top: 1.8vw;
+    }
+    
+    #huang img {
+        margin-top: -2.25vw;
+    }
+    
+    #xu img {
+        margin-top: 2vw;
+    }
+    
+    #li img {
+        margin-top: -1.82vw;
+    }
+    
+    @media screen and (aspect-ratio: 4/3) {
+         :root {
+            --percentage-of-right-container: 80%;
+        }
+        #cover-outer-container {
+            border: 2vw solid #595050;
+            border-width: 3vw 2vw;
+        }
+        #cover-inner-container-right {
+            background-size: 100% 71vw;
+        }
+        .profile-inner-container {
+            width: 15vw;
+            padding-top: 12vw;
+            margin: 0;
+        }
+        .profile-inner-container:hover {
+            transform: scale(1.25, 1.25);
+            transition: all 0.45s ease;
+        }
+        /*
 .profile-inner-container > * {
-  display: none;
+display: none;
 }
 */
