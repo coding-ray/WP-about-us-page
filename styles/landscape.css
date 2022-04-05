@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 #cover-inner-container-right {
   width: var(--percentage-of-right-container);
   flex-direction: column;
-  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149, .55)), url("../img/cover.jpeg");
+  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149, .55)), url("../img/cover.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
 
 .cover-text {
   position: relative;
-  font-size: 4vw;
   font-family: "DongQingBold";
 }
 
@@ -84,10 +83,13 @@ body::-webkit-scrollbar {
 
 .cover-text-up {
   font-weight: bold;
+  font-size: 4.5vw;
 }
 
 .cover-text-down {
   font-weight: bold;
+  letter-spacing: -0.1vw;
+  font-size: 4vw;
 }
 
 #about-us-container {
