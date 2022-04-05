@@ -1,0 +1,5 @@
+@media screen and (min-aspect-ratio: 3/4) {}
+
+@media screen and (max-aspect-ratio: 3/4) and (min-aspect-ratio: 9/16) {}
+
+@media screen and (max-aspect-ratio: 9/16) {}
