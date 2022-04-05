@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
 
 .cover-text {
   position: relative;
-  font-size: 4vw;
   font-family: "DongQingBold";
 }
 
@@ -83,11 +82,18 @@ body::-webkit-scrollbar {
 }
 
 .cover-text-up {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 4.5vw;
 }
 
 .cover-text-down {
-  font-weight: bold;
+  font-weight: 300;
+  letter-spacing: -4px;
+  font-size: 4vw;
+}
+
+#cover-text-left-down {
+  margin-right: 2.2vw;
 }
 
 #about-us-container {
@@ -168,21 +174,25 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
-   :root {
+  :root {
     --percentage-of-right-container: 80%;
   }
+
   #cover-outer-container {
     border: 2vw solid #595050;
     border-width: 3vw 2vw;
   }
+
   #cover-inner-container-right {
     background-size: 100%;
   }
+
   .profile-inner-container {
     width: 15vw;
     padding-top: 12vw;
     margin: 0;
   }
+
   .profile-inner-container:hover {
     transform: scale(1.25, 1.25);
     transition: all 0.45s ease;
