@@ -142,6 +142,7 @@ body::-webkit-scrollbar {
 }
 
 .profile-inner-container:hover p {
+  font-family: "DongQingBold";
   transition: .5s ease;
   font-size: 1.1em;
   color:beige;
@@ -157,15 +158,46 @@ body::-webkit-scrollbar {
 }
 
 #huang img {
-  margin-top: -4.25vw;
+  margin-top: -2.25vw;
 }
 
 #xu img {
-  margin-top: 0;
+  margin-top: 2vw;
 }
 
 #li img {
   margin-top: -1.82vw;
+}
+
+@media screen and (device-aspect-ratio: 4/3) {
+:root { 
+  --cover-border-width: 2vw;
+  --cover-margin-width: 0.3vw;
+  --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
+  --percentage-of-right-container: 80%; }
+
+#cover-inner-container-right {
+  width: var(--percentage-of-right-container);
+  flex-direction: column;
+  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149,.55)), url("../img/cover.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 73vw;
+  justify-content: center;
+  align-items: flex-start; }
+
+.profile-inner-container {
+    font-family: "DongQingBold";
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    padding-top: 12vw;
+    margin: 0;
+  } 
+
+.profile-inner-container:hover {
+  transform: scale(1.25, 1.25);
+  transition: all 0.45s ease;
 }
 /*
 .profile-inner-container > * {
