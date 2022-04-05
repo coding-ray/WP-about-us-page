@@ -56,20 +56,20 @@ body::-webkit-scrollbar {
 }
 
 #cover-inner-container-right {
-  background-image: url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: var(--percentage-of-right-container);
   flex-direction: column;
+  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149, .55)), url("../img/cover.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   justify-content: center;
   align-items: flex-start;
-  opacity: 80%;
 }
 
 .cover-text {
+  position: relative;
+  font-size: 4vw;
   font-family: "DongQingBold";
-  font-size: 4.5vw;
 }
 
 .cover-text-left {
@@ -83,11 +83,11 @@ body::-webkit-scrollbar {
 }
 
 .cover-text-up {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .cover-text-down {
-  font-weight: 300;
+  font-weight: bold;
 }
 
 #about-us-container {
@@ -127,29 +127,28 @@ body::-webkit-scrollbar {
 
 .profile-inner-container h3 {
   font-size: 1.8em;
-  color:beige;
+  color: beige;
   text-align: center;
   background-color: #463d3d;
   margin: 0;
 }
 
 .profile-inner-container p {
-  transition: .5s ease;
   margin: 0px;
+  height: fit-content;
+  font-family: "DongQing";
   text-align: center;
   font-size: 1.1em;
+  color: beige;
+  background-color: #463d3d;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   opacity: 0;
 }
 
 .profile-inner-container:hover p {
-  transition: .5s ease;
-  font-size: 1.1em;
-  color:beige;
   opacity: 1;
-  background-color: #463d3d;
-  height:15.3vh;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  transition: .5s ease;
 }
 
 #chen img {
@@ -157,20 +156,35 @@ body::-webkit-scrollbar {
 }
 
 #huang img {
-  margin-top: -4.25vw;
+  margin-top: -2.25vw;
 }
 
 #xu img {
-  margin-top: 0;
+  margin-top: 2vw;
 }
 
 #li img {
   margin-top: -1.82vw;
 }
 
-
-/*
-.profile-inner-container > * {
-  display: none;
+@media screen and (max-aspect-ratio: 16/9) {
+   :root {
+    --percentage-of-right-container: 80%;
+  }
+  #cover-outer-container {
+    border: 2vw solid #595050;
+    border-width: 3vw 2vw;
+  }
+  #cover-inner-container-right {
+    background-size: 100%;
+  }
+  .profile-inner-container {
+    width: 15vw;
+    padding-top: 12vw;
+    margin: 0;
+  }
+  .profile-inner-container:hover {
+    transform: scale(1.25, 1.25);
+    transition: all 0.45s ease;
+  }
 }
-*/
