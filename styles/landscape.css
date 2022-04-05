@@ -47,10 +47,9 @@ body::-webkit-scrollbar {
   flex-direction: column;
   background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149,.55)), url("../img/cover.jpeg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   justify-content: center;
-  display: flex;
   align-items: flex-start;
 }
 
@@ -167,8 +166,6 @@ body::-webkit-scrollbar {
 #li img {
   margin-top: -1.82vw;
 }
-
-
 /*
 .profile-inner-container > * {
   display: none;
