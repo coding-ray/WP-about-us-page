@@ -188,10 +188,3 @@ body::-webkit-scrollbar {
     transition: all 0.45s ease;
   }
 }
-
-
-/*
-.profile-inner-container > * {
-display: none;
-}
-*/
