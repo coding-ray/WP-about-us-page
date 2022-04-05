@@ -86,7 +86,7 @@
 |revert|reverting changes|
 |style|cosmetic changes|
 |test|unit tests|
-  
+
 [Reference](https://dev.to/sublimegeek/clean-conventional-commits-40l8)
 
 <a id="luffy"></a>
