@@ -1,6 +1,19 @@
 @font-face {
-  font-family: "??";
-  src: url("res/??.ttf");
+  /* 冬青黑體 W3 */
+  font-family: "DongQing";
+  src: url("../fonts/Hiragino Sans GB W3.ttf");
+}
+
+@font-face {
+  /* 冬青黑體 W6 */
+  font-family: "DongQingBold";
+  src: url("../fonts/Hiragino Sans GB W6.otf");
+}
+
+@font-face {
+  /* 華康娃娃體 */
+  font-family: "WaWa";
+  src: url("../fonts/DF Wa Wa.ttf");
 }
 
 :root {
@@ -53,13 +66,10 @@ body::-webkit-scrollbar {
   align-items: flex-start;
 }
 
-[id^="cover-text"] {
-  font-family: "??";
-}
-
 .cover-text {
   position: relative;
   font-size: 4vw;
+  font-family: "DongQingBold";
 }
 
 .cover-text-left {
@@ -69,6 +79,7 @@ body::-webkit-scrollbar {
 
 .cover-text-right {
   margin: 0 0.7vw;
+  color: #4E3821;
 }
 
 .cover-text-up {
@@ -79,26 +90,16 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
-#cover-text-right-up {
-  color: #422b16;
-  font-weight: bold;
-  /* or #D19259*/
-}
-
-#cover-text-right-down {
-  color: #422b16;
-  font-weight: bold;
-  /* or #D19259*/
-}
-
 #about-us-container {
   height: 100vh;
   background-color: #e9ddd2;
 }
 
 #about-us-text {
+  font-family: "WaWa";
   margin: 0 4.9vw;
   font-size: 8.5vw;
+  font-weight: 500;
 }
 
 #profile-outer-container {
