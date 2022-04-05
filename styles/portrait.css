@@ -2,4 +2,57 @@
 
 @media screen and (max-aspect-ratio: 3/4) and (min-aspect-ratio: 9/16) {}
 
-@media screen and (max-aspect-ratio: 9/16) {}
+@media screen and (max-aspect-ratio: 9/16) {
+  :root {
+    --cover-height: 550px;
+    --about-us-height: 1550px;
+    --percentage-of-right-container: 75%;
+    --screen-height: 5vh;
+    --border-top-bottom-offset: calc((var(--screen-height)-2220px)/2);
+  }
+  #cover-outer-container {
+    width: 100vw;
+    height: var(--cover-height);
+    border-top: var(--border-top-bottom-offset) solid #595050;
+    border-bottom: 0;
+    margin: 0;
+  }
+  .cover-text-up {
+    font-size: 60px;
+  }
+  .cover-text-down {
+    font-size: 60px;
+  }
+  #about-us-container {
+    width: 100vw;
+    height: var(--about-us-height);
+    border: var(--cover-border-width) solid #595050;
+    border-top: 0;
+    border-bottom: var(--border-top-bottom-offset) solid #595050;
+  }
+  #about-us-text {
+    position: relative;
+    top: 30vw;
+    left: 15vw;
+    font-size: 14vw;
+  }
+  #profile-outer-container {
+    position: relative;
+    top: 50vw;
+  }
+  #chen img {
+    margin-top: 1.8vw;
+  }
+  #huang img {
+    margin-top: -12vw;
+  }
+  #xu img {
+    margin-top: -8vw;
+  }
+  #li img {
+    margin-top: -6vw;
+  }
+  #jiang {
+    margin-top: -3vw;
+  }
+}
