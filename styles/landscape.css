@@ -171,25 +171,18 @@ body::-webkit-scrollbar {
 
 @media screen and (device-aspect-ratio: 4/3) {
 :root { 
-  --cover-border-width: 2vw;
-  --cover-margin-width: 0.3vw;
-  --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
   --percentage-of-right-container: 80%; }
 
+  #cover-outer-container {
+    border: 2vw solid #595050;
+    border-width: 3vw 2vw;
+  }
+
 #cover-inner-container-right {
-  width: var(--percentage-of-right-container);
-  flex-direction: column;
-  background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149,.55)), url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 73vw;
-  justify-content: center;
-  align-items: flex-start; }
+  background-size: 100% 71vw;
+}
 
 .profile-inner-container {
-    font-family: "DongQingBold";
-    display: flex;
-    flex-direction: column;
     width: 15vw;
     padding-top: 12vw;
     margin: 0;
