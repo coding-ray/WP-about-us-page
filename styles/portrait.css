@@ -1,37 +1,45 @@
+#about-us-text {
+  background-image: linear-gradient(black, black);
+  background-position: bottom;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-aspect-ratio: 3/4) {}
 
 @media screen and (max-aspect-ratio: 3/4) and (min-aspect-ratio: 9/16) {}
 
 @media screen and (max-aspect-ratio: 9/16) {
-  :root {
-    --cover-height: 550px;
-    --about-us-height: 1550px;
+   :root {
+    --cover-height: 100vh;
+    --about-us-height: 100vh;
     --percentage-of-right-container: 75%;
-    --screen-height: 5vh;
-    --border-top-bottom-offset: calc((var(--screen-height)-2220px)/2);
+    --cover-img-height: 25vh;
+    --border-top-bottom-offset: calc((var(--cover-height) - var(--cover-img-height))/2);
   }
   #cover-outer-container {
     width: 100vw;
-    height: var(--cover-height);
-    border-top: var(--border-top-bottom-offset) solid #595050;
-    border-bottom: 0;
+    height: 25vh;
     margin: 0;
+    border-top: var(--border-top-bottom-offset) solid #595050;
+    border-bottom: var(--border-top-bottom-offset) solid #595050;
   }
   .cover-text-up {
-    font-size: 60px;
+    font-size: 2.7vh;
   }
   .cover-text-down {
-    font-size: 60px;
+    font-size: 2.7vh;
   }
   #about-us-container {
     width: 100vw;
     height: var(--about-us-height);
     border: var(--cover-border-width) solid #595050;
-    border-top: 0;
-    border-bottom: var(--border-top-bottom-offset) solid #595050;
+    margin-top: -1vh;
+    border-bottom: 0;
   }
   #about-us-text {
     position: relative;
+    width: fit-content;
     top: 30vw;
     left: 15vw;
     font-size: 14vw;
