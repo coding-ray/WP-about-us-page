@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
   margin-top: -1.82vw;
 }
 
-@media screen and (max-aspect-ratio: 4/3) and (min-width:900px) {
+@media screen and (max-aspect-ratio: 4/3) and (min-aspect-ratio: 1/1) {
    :root {
     --percentage-of-right-container: 75%;
   }
@@ -254,65 +254,32 @@ body::-webkit-scrollbar {
     left: 15vw;
     display: inline-block;
   }
-  .profile-inner-container {
-    width: 15vw;
-    padding-top: 12vw;
-    margin: 0;
-  }
   .profile-inner-container:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.45s ease;
     opacity: 0.5;
-  }
-  .profile-inner-container img:hover {
-    cursor: pointer;
   }
   .profile-inner-container:not(:hover) {
     opacity: 1;
     transition: all 0.2s ease;
   }
   .profile-inner-container {
-    opacity: 0;
-  }
-  .profile-inner-container-change {
-    position: absolute;
-    width: 15vw;
-    margin: 0;
-    left: 0;
-    right: 0;
-    margin-top: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-    transition: all 0.45s ease;
-    -webkit-animation-name: zoom;
-    animation-name: zoom;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-  }
-  .profile-inner-container-change img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .profile-inner-container-change h3 {
-    font-size: 1.8em;
-    color: beige;
-    text-align: center;
-    background-color: #463d3d;
+    width: 15vw; 
+    padding-top: 12vw;
     margin: 0;
   }
-  .profile-inner-container-change p {
-    margin: 0px;
-    height: fit-content;
-    font-family: "DongQing";
-    text-align: center;
-    font-size: 1.1em;
-    color: beige;
-    background-color: #463d3d;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+  .profile-inner-container img:hover {
+    cursor: pointer;
   }
-  #xu img {
-    margin-top: -1vw;
+  @keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+    }
   }
   @-webkit-keyframes zoom {
     from {
@@ -324,14 +291,47 @@ body::-webkit-scrollbar {
       transform: scale(1);
     }
   }
-  @keyframes zoom {
-    from {
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    }
-    to {
-      -webkit-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-  }
+}
+.profile-inner-container {
+  opacity: 0;
+}
+.profile-inner-container-change {
+  position: absolute;
+  width: 15vw;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin-top: 15vw;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.45s ease;
+  -webkit-animation-name: zoom;
+  animation-name: zoom;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.profile-inner-container-change img {
+  width: 100%;
+  border-radius: 10px;
+}
+.profile-inner-container-change h3 {
+  font-size: 1.8em;
+  color: beige;
+  text-align: center;
+  background-color: #463d3d;
+  margin: 0;
+}
+.profile-inner-container-change p {
+  margin: 0px;
+  height: fit-content;
+  font-family: "DongQing";
+  text-align: center;
+  font-size: 1.1em;
+  color: beige;
+  background-color: #463d3d;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#xu img {
+  margin-top: -1vw;
 }
