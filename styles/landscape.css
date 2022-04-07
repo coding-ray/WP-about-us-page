@@ -72,20 +72,6 @@ body::-webkit-scrollbar {
   position: relative;
   font-weight: bold;
   opacity: 0;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .cover-text-left {
@@ -117,6 +103,7 @@ body::-webkit-scrollbar {
   margin: 0 4.9vw;
   font-size: 8.5vw;
   font-weight: 500;
+  opacity: 0;
 }
 
 #profile-outer-container {
