@@ -66,6 +66,10 @@ body::-webkit-scrollbar {
   align-items: flex-start;
 }
 
+#cover-text-for-43 {
+  display: none;
+}
+
 .cover-text {
   position: relative;
   font-family: "DongQingBold";
@@ -153,6 +157,15 @@ body::-webkit-scrollbar {
   transition: .5s ease;
 }
 
+.profile-inner-container:not(:hover) {
+  opacity: 0.2;
+  transition: all 0.2s ease;
+}
+
+.profile-inner-container-change {
+  display: none;
+}
+
 #chen img {
   margin-top: 1.8vw;
 }
@@ -171,22 +184,101 @@ body::-webkit-scrollbar {
 
 @media screen and (max-aspect-ratio: 16/9) {
    :root {
-    --percentage-of-right-container: 80%;
+    --percentage-of-right-container: 75%;
   }
   #cover-outer-container {
     border: 2vw solid #595050;
     border-width: 3vw 2vw;
   }
   #cover-inner-container-right {
+    background-position: top;
+    background-color: #ffffff;
     background-size: 100%;
   }
-  .profile-inner-container {
-    width: 15vw;
-    padding-top: 12vw;
+  .cover-text {
+    display: none;
+  }
+  #cover-text-for-43 {
+    display: block;
+    position: absolute;
+    background-color: #b2a1a1;
+    height: fit-content;
+    width: 70%;
+    left: 15vw;
+    top: 50vh;
     margin: 0;
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
-  .profile-inner-container:hover {
-    transform: scale(1.25, 1.25);
-    transition: all 0.45s ease;
+  #cover-text-for-43 h1 {
+    display: inline-block;
   }
+  #cover-text-for-43 h2 {
+    display: inline-block;
+  }
+}
+
+.profile-inner-container {
+  width: 15vw;
+  padding-top: 12vw;
+  margin: 0;
+}
+
+.profile-inner-container:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.45s ease;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.profile-inner-container:not(:hover) {
+  opacity: 0.2;
+  transition: all 0.2s ease;
+}
+
+.profile-inner-container {
+  opacity: 0;
+}
+
+.profile-inner-container-change {
+  position: absolute;
+  width: 15vw;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1.1, 1.1);
+  transition: all 0.45s ease;
+}
+
+.profile-inner-container-change img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.profile-inner-container-change h3 {
+  font-size: 1.8em;
+  color: beige;
+  text-align: center;
+  background-color: #463d3d;
+  margin: 0;
+}
+
+.profile-inner-container-change p {
+  margin: 0px;
+  height: fit-content;
+  font-family: "DongQing";
+  text-align: center;
+  font-size: 1.1em;
+  color: beige;
+  background-color: #463d3d;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
 }
