@@ -109,6 +109,7 @@ body::-webkit-scrollbar {
 #profile-outer-container {
   display: flex;
   justify-content: space-between;
+  height: 75vh;
   margin: 0 5vw;
 }
 
@@ -125,11 +126,12 @@ body::-webkit-scrollbar {
 }
 
 .profile-inner-container img {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
 }
 
 .profile-inner-container h3 {
+  width: 90%;
   font-size: 1.8em;
   font-weight: 600;
   color: beige;
@@ -139,6 +141,8 @@ body::-webkit-scrollbar {
 }
 
 .profile-inner-container p {
+  width: 90%;
+  margin: 0px;
   margin: -1px 0 0 0;
   height: fit-content;
   text-align: center;
