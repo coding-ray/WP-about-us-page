@@ -1,8 +1,7 @@
 #about-us-text {
-  background-image: linear-gradient(black, black);
-  background-position: bottom;
-  background-size: 100% 5px;
-  background-repeat: no-repeat;
+  text-decoration: underline solid black 0.4vw;
+  text-underline-offset: 1vw;
+  color: #413434;
 }
 
 @media screen and (min-aspect-ratio: 3/4) {}
@@ -17,7 +16,7 @@
   }
   #cover-outer-container {
     width: 100vw;
-    height: 32vh;
+    height: var(--cover-img-height);
     margin: 0;
     border-top: var(--border-top-bottom-offset) solid #595050;
     border-bottom: var(--border-top-bottom-offset) solid #595050;
@@ -72,8 +71,8 @@
     --border-top-bottom-offset: calc((var(--cover-height) - var(--cover-img-height))/2);
   }
   #cover-outer-container {
-    width: 100vw;
-    height: 25vh;
+    width: calc(100vw - var(--cover-boder-width)*2);
+    height: var(--cover-img-height);
     margin: 0;
     border-top: var(--border-top-bottom-offset) solid #595050;
     border-bottom: var(--border-top-bottom-offset) solid #595050;
@@ -85,7 +84,7 @@
     font-size: 2.7vh;
   }
   #about-us-container {
-    width: 100vw;
+    width: calc(100vw - var(--cover-boder-width)*2);
     height: var(--about-us-height);
     border: var(--cover-border-width) solid #595050;
     margin-top: -1vh;
