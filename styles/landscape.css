@@ -259,17 +259,16 @@ body::-webkit-scrollbar {
     transition: all 0.45s ease;
     opacity: 0.5;
   }
-  .profile-inner-container:not(:hover) {
-    opacity: 1;
-    transition: all 0.2s ease;
-  }
   .profile-inner-container {
-    width: 15vw; 
-    padding-top: 12vw;
-    margin: 0;
+    opacity: 0;
   }
   .profile-inner-container img:hover {
     cursor: pointer;
+  }
+  .profile-inner-container {
+    width: 15vw;
+    padding-top: 12vw;
+    margin: 0;
   }
   @keyframes zoom {
     from {
@@ -292,8 +291,10 @@ body::-webkit-scrollbar {
     }
   }
 }
-.profile-inner-container {
-  opacity: 0;
+
+.profile-inner-container:not(:hover) {
+  opacity: 1;
+  transition: all 0.2s ease;
 }
 .profile-inner-container-change {
   position: absolute;
