@@ -24,9 +24,10 @@
 }
 
 body {
-  background-color: white;
+  background-color: #595050;
   height: 100%;
   margin: 0;
+  
 }
 
 body::-webkit-scrollbar {
@@ -194,6 +195,13 @@ body::-webkit-scrollbar {
    :root {
     --percentage-of-right-container: 75%;
   }
+  #about-us-text {
+    text-align: center;
+    text-decoration-skip-ink: none;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness:5px;
+  }
   #cover-outer-container {
     border: 2vw solid #595050;
     border-width: 3vw 2vw;
@@ -301,6 +309,9 @@ body::-webkit-scrollbar {
     background-color: #463d3d;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+  #xu img {
+    margin-top: -1vw;
   }
   @-webkit-keyframes zoom {
     from {
