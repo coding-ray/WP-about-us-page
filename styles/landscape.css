@@ -66,6 +66,10 @@ body::-webkit-scrollbar {
   align-items: flex-start;
 }
 
+#cover-inner-container-right-bottom {
+  display: none;
+}
+
 #cover-text-for-43 {
   display: none;
 }
@@ -131,12 +135,18 @@ body::-webkit-scrollbar {
   border-radius: 10px;
 }
 
+.profile-inner-container:hover h3 {
+  border-radius: 0;
+}
+
 .profile-inner-container h3 {
   font-size: 1.8em;
   color: beige;
   text-align: center;
   background-color: #463d3d;
   margin: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .profile-inner-container p {
@@ -153,12 +163,10 @@ body::-webkit-scrollbar {
 }
 
 .profile-inner-container:hover p {
-  opacity: 1;
   transition: .5s ease;
 }
 
 .profile-inner-container:not(:hover) {
-  opacity: 0.2;
   transition: all 0.2s ease;
 }
 
@@ -182,7 +190,7 @@ body::-webkit-scrollbar {
   margin-top: -1.82vw;
 }
 
-@media screen and (max-aspect-ratio: 16/9) {
+@media screen and (max-aspect-ratio: 4/3) and (min-width:900px) {
    :root {
     --percentage-of-right-container: 75%;
   }
@@ -191,9 +199,23 @@ body::-webkit-scrollbar {
     border-width: 3vw 2vw;
   }
   #cover-inner-container-right {
+    position: relative;
+    width: var(--percentage-of-right-container);
+    background: linear-gradient(rgba(208, 200, 200, 0.55), rgba(155, 149, 149, .55)), url("../img/cover.jpeg");
+    background-repeat: no-repeat;
     background-position: top;
-    background-color: #ffffff;
     background-size: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #cover-inner-container-right-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vw;
+    display: block;
+    background-color: #D1C6C6;
+    z-index: 3;
   }
   .cover-text {
     display: none;
@@ -205,80 +227,99 @@ body::-webkit-scrollbar {
     height: fit-content;
     width: 70%;
     left: 15vw;
-    top: 50vh;
+    top: 55vh;
     margin: 0;
     margin-top: 5vw;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: justify;
+    z-index: 10;
   }
   #cover-text-for-43 h1 {
+    margin-top: 3%;
+    left: 15vw;
     display: inline-block;
   }
   #cover-text-for-43 h2 {
+    margin-bottom: 3%;
+    left: 15vw;
     display: inline-block;
   }
-}
-
-.profile-inner-container {
-  width: 15vw;
-  padding-top: 12vw;
-  margin: 0;
-}
-
-.profile-inner-container:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 0.45s ease;
-  opacity: 0.2;
-  cursor: pointer;
-}
-
-.profile-inner-container:not(:hover) {
-  opacity: 0.2;
-  transition: all 0.2s ease;
-}
-
-.profile-inner-container {
-  opacity: 0;
-}
-
-.profile-inner-container-change {
-  position: absolute;
-  width: 15vw;
-  margin: 0;
-  left: 0;
-  right: 0;
-  margin-top: 5vw;
-  margin-left: auto;
-  margin-right: auto;
-  transform: scale(1.1, 1.1);
-  transition: all 0.45s ease;
-}
-
-.profile-inner-container-change img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.profile-inner-container-change h3 {
-  font-size: 1.8em;
-  color: beige;
-  text-align: center;
-  background-color: #463d3d;
-  margin: 0;
-}
-
-.profile-inner-container-change p {
-  margin: 0px;
-  height: fit-content;
-  font-family: "DongQing";
-  text-align: center;
-  font-size: 1.1em;
-  color: beige;
-  background-color: #463d3d;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-
+  .profile-inner-container {
+    width: 15vw;
+    padding-top: 12vw;
+    margin: 0;
+  }
+  .profile-inner-container:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.45s ease;
+    opacity: 0.5;
+  }
+  .profile-inner-container img:hover {
+    cursor: pointer;
+  }
+  .profile-inner-container:not(:hover) {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+  .profile-inner-container {
+    opacity: 0;
+  }
+  .profile-inner-container-change {
+    position: absolute;
+    width: 15vw;
+    margin: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.45s ease;
+    -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  .profile-inner-container-change img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .profile-inner-container-change h3 {
+    font-size: 1.8em;
+    color: beige;
+    text-align: center;
+    background-color: #463d3d;
+    margin: 0;
+  }
+  .profile-inner-container-change p {
+    margin: 0px;
+    height: fit-content;
+    font-family: "DongQing";
+    text-align: center;
+    font-size: 1.1em;
+    color: beige;
+    background-color: #463d3d;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+  }
 }
