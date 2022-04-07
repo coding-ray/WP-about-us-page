@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
 }
 
 .cover-text-down {
-  letter-spacing: -0.1vw;
+  letter-spacing: 0.1vw;
   font-size: 4vw;
 }
 
