@@ -190,3 +190,25 @@ body::-webkit-scrollbar {
     transition: all 0.45s ease;
   }
 }
+
+@media screen and (min-aspect-ratio: 4/3) {
+   :root {
+    --percentage-of-right-container: 80%;
+  }
+  #cover-outer-container {
+    border: 2vw solid #595050;
+    border-width: 3vw 2vw;
+  }
+  #cover-inner-container-right {
+    background-size: 100%;
+  }
+  .profile-inner-container {
+    width: 15vw;
+    padding-top: 19vw;
+    margin: 0;
+  }
+  .profile-inner-container:hover {
+    transform: scale(1.25, 1.25);
+    transition: all 0.45s ease;
+  }
+}
