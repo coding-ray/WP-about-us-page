@@ -27,6 +27,8 @@ body {
   background-color: white;
   height: 100%;
   margin: 0;
+  font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif, arial;
+  font-weight: normal;
 }
 
 body::-webkit-scrollbar {
@@ -68,7 +70,7 @@ body::-webkit-scrollbar {
 
 .cover-text {
   position: relative;
-  font-family: "DongQingBold";
+  font-weight: bold;
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -97,12 +99,10 @@ body::-webkit-scrollbar {
 }
 
 .cover-text-up {
-  font-weight: bold;
   font-size: 4.5vw;
 }
 
 .cover-text-down {
-  font-weight: bold;
   letter-spacing: -0.1vw;
   font-size: 4vw;
 }
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
 
 .profile-inner-container h3 {
   font-size: 1.8em;
-  font-family: "DongQing";
+  font-weight: 600;
   color: beige;
   text-align: center;
   background-color: #463d3d;
@@ -154,7 +154,6 @@ body::-webkit-scrollbar {
 .profile-inner-container p {
   margin: -1px 0 0 0;
   height: fit-content;
-  font-family: "DongQing";
   text-align: center;
   font-size: 1.1em;
   color: beige;
