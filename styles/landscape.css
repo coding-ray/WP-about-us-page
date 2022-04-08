@@ -18,7 +18,7 @@
 
 :root {
   --cover-border-width: 2vw;
-  --cover-margin-width: 0.3vw;
+  --cover-margin-width: 0vw;
   --cover-height-width-offset: calc(2 * (var(--cover-border-width) + var(--cover-margin-width)));
   --percentage-of-right-container: 66%;
 }
@@ -174,6 +174,7 @@ body::-webkit-scrollbar {
 
 .profile-inner-container-change {
   display: none;
+  z-index: 1;
 }
 
 #chen img {
@@ -201,7 +202,7 @@ body::-webkit-scrollbar {
     text-decoration-skip-ink: none;
     text-decoration: underline;
     text-underline-offset: 20px;
-    text-decoration-thickness:5px;
+    text-decoration-thickness: 5px;
   }
   #cover-outer-container {
     border: 2vw solid #595050;
@@ -296,6 +297,7 @@ body::-webkit-scrollbar {
   opacity: 1;
   transition: all 0.2s ease;
 }
+
 .profile-inner-container-change {
   position: absolute;
   width: 15vw;
@@ -311,10 +313,12 @@ body::-webkit-scrollbar {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
+
 .profile-inner-container-change img {
   width: 100%;
   border-radius: 10px;
 }
+
 .profile-inner-container-change h3 {
   font-size: 1.8em;
   color: beige;
@@ -322,6 +326,7 @@ body::-webkit-scrollbar {
   background-color: #463d3d;
   margin: 0;
 }
+
 .profile-inner-container-change p {
   margin: 0px;
   height: fit-content;
@@ -333,6 +338,22 @@ body::-webkit-scrollbar {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 #xu img {
   margin-top: -1vw;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
