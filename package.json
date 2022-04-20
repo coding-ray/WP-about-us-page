@@ -1,0 +1,35 @@
+{
+  "name": "about-us",
+  "version": "1.0.0",
+  "description": "This is the about-us page of the group NO.1 of SWR (Social Web Research) and WP (Web Programming).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "watch": "parcel watch parcel/index.pug --out-dir dist/parcel/ --public-url ./ ",
+    "serv": "parcel parcel/index.pug --port 10101"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-ray/WP-about-us-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-ray/WP-about-us-page/issues"
+  },
+  "homepage": "https://github.com/coding-ray/WP-about-us-page#readme",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "parcel": "^2.4.1",
+    "@anduh/pug-cli": "^1.0.0-alpha8"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.4.1",
+    "@parcel/transformer-sass": "2.4.1"
+  }
+}
