@@ -1,0 +1,1 @@
+node_modules/.bin/pug3 ./pug/index.pug -o ./pug/ -P --watch
