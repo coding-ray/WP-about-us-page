@@ -1,5 +1,5 @@
-# About-us Page of 偵測異常消費 Group
-This is the about-us page of the group NO.1 (偵測異常消費) of Social Web Research (SWR) and Web Programming (WP) courses in National Cheng-Kung University (NCKU).
+# About-us Page of 即時偵測異常消費 Group
+This is the about-us page of the group NO.1 (即時偵測異常消費) of Social Web Research (SWR) and Web Programming (WP) courses in National Cheng-Kung University (NCKU).
 
 ## Getting Started
 1. Install [Git](https://git-scm.com/downloads) and register an account.
