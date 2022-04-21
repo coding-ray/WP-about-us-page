@@ -6,28 +6,28 @@ This is the about-us page of the group NO.1 (即時偵測異常消費) of Social
 1. Install [Node.js and npm](https://nodejs.org/en/download/).
 1. Clone this repository into the `about-us` folder (for example)  
     ```
-    git clone https://github.com/coding-ray/WP-about-us-page about-us
+    $ git clone https://github.com/coding-ray/WP-about-us-page about-us
     ```
 1. In `about-us`, install the required modules specified in `package.json`  
     ```
-    npm i
+    $ npm i
     ```
 1. Compile `pug/index.pug` into `pug/index.html`  
     1. In Linux,
         ```
-        node_modules/.bin/pug3 ./pug/index.pug -o ./pug/ -P
+        $ node_modules/.bin/pug3 ./pug/index.pug -o ./pug/ -P
         ```  
         or simply run  
         ```
-        ./live_pug
+        $ ./live_pug
         ```
-    1. In Windows,  
+    1. In Windows Powershell,  
         ```
-        node_modules/.bin/pug3.cmd ./pug/index.pug -o ./pug/ -P
+        PS> node_modules/.bin/pug3.cmd ./pug/index.pug -o ./pug/ -P
         ```
         or simply run  
         ```
-        .\live_pug.cmd
+        PS> ./live_pug.cmd
         ```
 1. Check the website named `index.html` in the `pug` folder.
 
